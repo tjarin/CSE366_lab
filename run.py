@@ -42,10 +42,8 @@ def main():
         rect_position = (position[0], position[1], agent.size[0], agent.size[1])
         pygame.draw.rect(screen, (0, 0, 255), rect_position)
 
-        position_text1 = font.render(f"Position: ({position[0]}, {position[1]})", True, (0, 0, 0))
-        position_text2 = font.render(f"Position: ({position[0]}, {position[1]})", True, (0, 0, 0))
-        screen.blit(position_text1, (10, 10))
-        screen.blit(position_text2, (170, 210))
+        position_text = font.render(f"Position: ({position[0]}, {position[1]})", True, (0, 0, 0))
+        screen.blit(position_text, (10, 10))
 
         pygame.display.flip()
 
